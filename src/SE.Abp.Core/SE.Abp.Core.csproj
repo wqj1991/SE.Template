@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>SE.Abp.Core</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Furion.Extras.ObjectMapper.Mapster" Version="3.0.6" />
+      <PackageReference Include="Furion.Pure" Version="3.0.6" />
+      <PackageReference Include="JetBrains.Annotations" Version="2022.1.0-eap3" />
+    </ItemGroup>
+
+</Project>
