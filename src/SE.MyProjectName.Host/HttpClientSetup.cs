@@ -1,11 +1,10 @@
 ﻿using System.Reflection;
 using Furion;
-using Furion.ClayObject.Extensions;
 using Furion.DependencyInjection;
 using Furion.Reflection;
 using Furion.RemoteRequest;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using SqlSugar;
+using SE.RemoteRequest.Proxies;
 
 namespace SE.MyProjectName.Host;
 
@@ -29,10 +28,10 @@ public static class HttpClientSetup
         // 获取全局代理类型
         GlobalServiceProxyType = App.EffectiveTypes
             .FirstOrDefault(u =>
-                typeof(AspectDispatchProxy).IsAssignableFrom(u) && typeof(IGlobalDispatchProxy).IsAssignableFrom(u) &&
+                typeof(SeAspectDispatchProxy).IsAssignableFrom(u) && typeof(IGlobalDispatchProxy).IsAssignableFrom(u) &&
                 u.IsClass && !u.IsInterface && !u.IsAbstract);
 
-        DispatchCreateMethod = typeof(AspectDispatchProxy).GetMethod(nameof(AspectDispatchProxy.Create));
+        DispatchCreateMethod = typeof(SeAspectDispatchProxy).GetMethod(nameof(SeAspectDispatchProxy.Create));
     }
 
 
@@ -42,7 +41,7 @@ public static class HttpClientSetup
             return services;
         
         // 注册远程请求代理接口
-        services.AddScopedDispatchProxyForInterface<HttpDispatchProxy, IHttpDispatchProxy>();
+        services.AddScopedDispatchProxyForInterface<SeHttpDispatchProxy, IHttpDispatchProxy>();
 
         // 注册默认请求客户端
         services.AddHttpClient();
@@ -59,11 +58,11 @@ public static class HttpClientSetup
     /// <returns>服务集合</returns>
     public static IServiceCollection AddScopedDispatchProxyForInterface<TDispatchProxy, TIDispatchProxy>(
         this IServiceCollection services)
-        where TDispatchProxy : AspectDispatchProxy, IDispatchProxy
+        where TDispatchProxy : SeAspectDispatchProxy, IDispatchProxy
         where TIDispatchProxy : class
     {
         // 注册代理类
-        services.AddScoped<AspectDispatchProxy, TDispatchProxy>();
+        services.AddScoped<SeAspectDispatchProxy, TDispatchProxy>();
 
         // 代理依赖接口类型
         var proxyType = typeof(TDispatchProxy);
@@ -106,7 +105,7 @@ public static class HttpClientSetup
         if (proxyType == null || (type != null && type.IsDefined(typeof(SuppressProxyAttribute), true))) return;
 
         // 注册代理类型
-        services.InnerAdd(dependencyType, typeof(AspectDispatchProxy), proxyType);
+        services.InnerAdd(dependencyType, typeof(SeAspectDispatchProxy), proxyType);
 
         // 注册服务
         services.InnerAdd(dependencyType, inter, provider =>
