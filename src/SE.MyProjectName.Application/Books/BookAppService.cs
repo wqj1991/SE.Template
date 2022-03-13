@@ -1,7 +1,7 @@
 ﻿using Furion.DependencyInjection;
 using Furion.DynamicApiController;
 using Mapster;
-using SE.Abp.Application.Contracts.Dtos;
+using SE.Application.Contracts.Dtos;
 using SE.MyProjectName.Application.Contracts.Books;
 using SE.MyProjectName.Application.Contracts.Books.Dtos;
 using SE.MyProjectName.Domain.Books;
@@ -63,5 +63,10 @@ public class BookAppService :IDynamicApiController, IBookAppService, IScoped
     {
         var book = await _bookRepository.GetAsync(id);
         book.Publish();
+    }
+
+    public async Task Todo()
+    {
+        await _bookRepository.GetTodo();
     }
 }

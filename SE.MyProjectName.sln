@@ -14,15 +14,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.MyProjectName.Applicatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.MyProjectName.Application.Contracts", "src\SE.MyProjectName.Application.Contracts\SE.MyProjectName.Application.Contracts.csproj", "{7E14D46B-140B-4595-B8A1-B0B5A3019709}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Abp.Domain", "src\SE.Abp.Domain\SE.Abp.Domain.csproj", "{F3DC44FF-7DA4-4B1A-BDDC-7599C7261CDD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Domain", "src\SE.Domain\SE.Domain.csproj", "{F3DC44FF-7DA4-4B1A-BDDC-7599C7261CDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Abp.Core", "src\SE.Abp.Core\SE.Abp.Core.csproj", "{E9348314-3F47-4BF6-BA52-DE42F8DC003A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Core", "src\SE.Core\SE.Core.csproj", "{E9348314-3F47-4BF6-BA52-DE42F8DC003A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Abp.Infrastructure", "src\SE.Abp.Infrastructure\SE.Abp.Infrastructure.csproj", "{907C795D-41E6-45E4-A82F-EF6D58C1C495}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Infrastructure", "src\SE.Infrastructure\SE.Infrastructure.csproj", "{907C795D-41E6-45E4-A82F-EF6D58C1C495}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Abp.Application.Contracts", "src\SE.Abp.Application.Contracts\SE.Abp.Application.Contracts.csproj", "{F3D321D1-9901-46F9-A190-E0167E459192}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Application.Contracts", "src\SE.Application.Contracts\SE.Application.Contracts.csproj", "{F3D321D1-9901-46F9-A190-E0167E459192}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.MyProjectName.Host", "src\SE.MyProjectName.Host\SE.MyProjectName.Host.csproj", "{8EB08F8D-E619-4DC0-98F6-CC4556C9DD66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.OtherProjectName.Application.Contracts", "src\SE.OtherProjectName.Application.Contracts\SE.OtherProjectName.Application.Contracts.csproj", "{358E56E3-60B2-45DE-BEB5-636FB6316B4D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +42,7 @@ Global
 		{907C795D-41E6-45E4-A82F-EF6D58C1C495} = {D2814DBA-CBA3-4EEC-9388-740D20D4B2D1}
 		{F3D321D1-9901-46F9-A190-E0167E459192} = {D2814DBA-CBA3-4EEC-9388-740D20D4B2D1}
 		{8EB08F8D-E619-4DC0-98F6-CC4556C9DD66} = {D2814DBA-CBA3-4EEC-9388-740D20D4B2D1}
+		{358E56E3-60B2-45DE-BEB5-636FB6316B4D} = {D2814DBA-CBA3-4EEC-9388-740D20D4B2D1}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{68DE6752-63A9-415D-B652-7F5014BD6F24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -82,5 +85,9 @@ Global
 		{8EB08F8D-E619-4DC0-98F6-CC4556C9DD66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EB08F8D-E619-4DC0-98F6-CC4556C9DD66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EB08F8D-E619-4DC0-98F6-CC4556C9DD66}.Release|Any CPU.Build.0 = Release|Any CPU
+		{358E56E3-60B2-45DE-BEB5-636FB6316B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{358E56E3-60B2-45DE-BEB5-636FB6316B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{358E56E3-60B2-45DE-BEB5-636FB6316B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{358E56E3-60B2-45DE-BEB5-636FB6316B4D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,4 +1,4 @@
-﻿using SE.Abp.Infrastructure.Stores;
+﻿using SE.Infrastructure.Stores;
 using SE.MyProjectName.Domain.Shared.Books;
 using SqlSugar;
 
