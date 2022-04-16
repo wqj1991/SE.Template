@@ -1,17 +1,17 @@
 ﻿using Furion.DependencyInjection;
-using SE.Http.Client;
-using SE.Infrastructure.Repositories;
+using Hi.Http.Client;
+using Hi.Infrastructure.Repositories;
 using SE.MyProjectName.Domain.Books;
 using SE.OtherProjectName.Application.Contracts.Todos;
 using SqlSugar;
 
 namespace SE.MyProjectName.Infrastructure.Books;
 
-public class BookRepository : Repository<BookEntity, BookStore, long>, IBookRepository, IScoped
+public class BookRepository : Repository<BookEntity, BookDo, long>, IBookRepository, IScoped
 {
     private readonly ITodoAppService _todoProxy;
 
-    public BookRepository(ISqlSugarRepository<BookStore> sqlSugarRepository,
+    public BookRepository(ISqlSugarRepository<BookDo> sqlSugarRepository,
         ITodoAppService todoProxy) : base(sqlSugarRepository)
     {
         _todoProxy = todoProxy;

@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\SE.Infrastructure\SE.Infrastructure.csproj" />
+      <ProjectReference Include="..\Hi.Infrastructure\Hi.Infrastructure.csproj" />
       <ProjectReference Include="..\SE.MyProjectName.Domain\SE.MyProjectName.Domain.csproj" />
       <ProjectReference Include="..\SE.OtherProjectName.Application.Contracts\SE.OtherProjectName.Application.Contracts.csproj" />
     </ItemGroup>

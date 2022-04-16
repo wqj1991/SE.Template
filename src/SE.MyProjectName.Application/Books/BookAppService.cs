@@ -1,7 +1,7 @@
 ﻿using Furion.DependencyInjection;
 using Furion.DynamicApiController;
 using Mapster;
-using SE.Application.Contracts.Dtos;
+using Hi.Application.Contracts.Dtos;
 using SE.MyProjectName.Application.Contracts.Books;
 using SE.MyProjectName.Application.Contracts.Books.Dtos;
 using SE.MyProjectName.Domain.Books;
@@ -13,9 +13,9 @@ namespace SE.MyProjectName.Application.Books;
 public class BookAppService :IDynamicApiController, IBookAppService, IScoped
 {
     private readonly IBookRepository _bookRepository;
-    private readonly ISqlSugarRepository<BookStore> _sqlSugarBookRepository;
+    private readonly ISqlSugarRepository<BookDo> _sqlSugarBookRepository;
 
-    public BookAppService(IBookRepository bookRepository, ISqlSugarRepository<BookStore> sqlSugarBookRepository)
+    public BookAppService(IBookRepository bookRepository, ISqlSugarRepository<BookDo> sqlSugarBookRepository)
     {
         _bookRepository = bookRepository;
         _sqlSugarBookRepository = sqlSugarBookRepository;

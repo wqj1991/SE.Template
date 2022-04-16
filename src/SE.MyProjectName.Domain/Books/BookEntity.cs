@@ -1,5 +1,5 @@
 ﻿using Furion;
-using SE.Domain.Entities;
+using Hi.Domain.Entities;
 using SE.MyProjectName.Domain.Shared.Books;
 
 namespace SE.MyProjectName.Domain.Books;

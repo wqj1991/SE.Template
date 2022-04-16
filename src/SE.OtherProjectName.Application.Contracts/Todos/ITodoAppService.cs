@@ -1,5 +1,5 @@
 ﻿using Furion.RemoteRequest;
-using SE.Application.Contracts.Dtos;
+using Hi.Application.Contracts.Dtos;
 using SE.OtherProjectName.Application.Contracts.Todos.Dtos;
 
 namespace SE.OtherProjectName.Application.Contracts.Todos;

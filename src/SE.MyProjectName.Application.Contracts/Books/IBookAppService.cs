@@ -1,4 +1,4 @@
-﻿using SE.Application.Contracts.Dtos;
+﻿using Hi.Application.Contracts.Dtos;
 using SE.MyProjectName.Application.Contracts.Books.Dtos;
 
 namespace SE.MyProjectName.Application.Contracts.Books;

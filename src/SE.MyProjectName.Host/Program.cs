@@ -1,5 +1,5 @@
 using Furion;
-using SE.Http.Client;
+using Hi.Http.Client;
 using SE.MyProjectName.Host;
 
 var builder = WebApplication.CreateBuilder(args).Inject();

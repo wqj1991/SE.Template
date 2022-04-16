@@ -14,13 +14,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.MyProjectName.Applicatio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.MyProjectName.Application.Contracts", "src\SE.MyProjectName.Application.Contracts\SE.MyProjectName.Application.Contracts.csproj", "{7E14D46B-140B-4595-B8A1-B0B5A3019709}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Domain", "src\SE.Domain\SE.Domain.csproj", "{F3DC44FF-7DA4-4B1A-BDDC-7599C7261CDD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hi.Domain", "src\Hi.Domain\Hi.Domain.csproj", "{F3DC44FF-7DA4-4B1A-BDDC-7599C7261CDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Core", "src\SE.Core\SE.Core.csproj", "{E9348314-3F47-4BF6-BA52-DE42F8DC003A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hi.Core", "src\Hi.Core\Hi.Core.csproj", "{E9348314-3F47-4BF6-BA52-DE42F8DC003A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Infrastructure", "src\SE.Infrastructure\SE.Infrastructure.csproj", "{907C795D-41E6-45E4-A82F-EF6D58C1C495}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hi.Infrastructure", "src\Hi.Infrastructure\Hi.Infrastructure.csproj", "{907C795D-41E6-45E4-A82F-EF6D58C1C495}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.Application.Contracts", "src\SE.Application.Contracts\SE.Application.Contracts.csproj", "{F3D321D1-9901-46F9-A190-E0167E459192}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hi.Application.Contracts", "src\Hi.Application.Contracts\Hi.Application.Contracts.csproj", "{F3D321D1-9901-46F9-A190-E0167E459192}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SE.MyProjectName.Host", "src\SE.MyProjectName.Host\SE.MyProjectName.Host.csproj", "{8EB08F8D-E619-4DC0-98F6-CC4556C9DD66}"
 EndProject

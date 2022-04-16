@@ -1,4 +1,4 @@
-﻿using SE.Domain.Repositories;
+﻿using Hi.Domain.Repositories;
 
 namespace SE.MyProjectName.Domain.Books;
 
