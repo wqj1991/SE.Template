@@ -8,8 +8,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Hi.Application.Contracts\Hi.Application.Contracts.csproj" />
       <ProjectReference Include="..\SE.MyProjectName.Domain.Shared\SE.MyProjectName.Domain.Shared.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="WQJ.Hi.Application.Contracts" Version="1.0.0" />
     </ItemGroup>
 
 </Project>

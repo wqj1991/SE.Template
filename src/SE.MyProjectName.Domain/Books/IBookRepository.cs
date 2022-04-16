@@ -1,8 +1,8 @@
-﻿using Hi.Domain.Repositories;
+using Hi.Domain.Repositories;
 
 namespace SE.MyProjectName.Domain.Books;
 
-public interface IBookRepository: IRepository<BookEntity, long>
+public interface IBookRepository : IRepository<BookEntity, long>
 {
-    public Task GetTodo();
+    
 }

@@ -10,14 +10,12 @@ using SqlSugar;
 
 namespace SE.MyProjectName.Application.Books;
 
-public class BookAppService :IDynamicApiController, IBookAppService, IScoped
+public class BookAppService : IDynamicApiController, IBookAppService, IScoped
 {
-    private readonly IBookRepository _bookRepository;
     private readonly ISqlSugarRepository<BookDo> _sqlSugarBookRepository;
 
-    public BookAppService(IBookRepository bookRepository, ISqlSugarRepository<BookDo> sqlSugarBookRepository)
+    public BookAppService(ISqlSugarRepository<BookDo> sqlSugarBookRepository)
     {
-        _bookRepository = bookRepository;
         _sqlSugarBookRepository = sqlSugarBookRepository;
     }
 
@@ -55,18 +53,11 @@ public class BookAppService :IDynamicApiController, IBookAppService, IScoped
 
     public async Task Delete(long id)
     {
-        // 只是获取简单删除建议直接穿透到 Infrastructure 层
-        await _sqlSugarBookRepository.DeleteAsync(id);
+        await new BookEntity(id).DeleteAsync();
     }
 
     public async Task Publish(long id)
     {
-        var book = await _bookRepository.GetAsync(id);
-        book.Publish();
-    }
-
-    public async Task Todo()
-    {
-        await _bookRepository.GetTodo();
+        await new BookEntity(id).PublishAsync();
     }
 }

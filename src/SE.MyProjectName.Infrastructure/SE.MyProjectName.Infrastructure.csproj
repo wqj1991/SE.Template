@@ -7,13 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Hi.Infrastructure\Hi.Infrastructure.csproj" />
       <ProjectReference Include="..\SE.MyProjectName.Domain\SE.MyProjectName.Domain.csproj" />
-      <ProjectReference Include="..\SE.OtherProjectName.Application.Contracts\SE.OtherProjectName.Application.Contracts.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Furion.Extras.DatabaseAccessor.SqlSugar" Version="3.0.6" />
+      <PackageReference Include="WQJ.Hi.Infrastructure" Version="1.0.0" />
     </ItemGroup>
 
 </Project>
